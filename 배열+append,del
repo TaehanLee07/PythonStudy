@@ -1,0 +1,11 @@
+#반학생을저장 
+s1 = "김개똥"
+s2 = "홍길동"
+#하나의묶음으로보관 >> List || array
+
+student = ['김개똥','홍길동',100]
+print(student[0]) #리스트 번지는 0번지 부터
+student.append("이태한") #항목추가
+print(student[3])
+del student[1] # studnet.pop(1)
+print(student)
