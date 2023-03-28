@@ -1,0 +1,15 @@
+#가위바위보 게임
+#if문 연습 가위=1 바위=2 보=3
+k = int(input("나는 뭐 낼래? 가위는 1 바위는 2 보는 3"))
+com = int(input("컴퓨터는 뭐낼래? 가위? 바위? 보?")) 
+
+if k==com:
+  print("비김")
+#내가이기는경우
+# 나1 컴3 나2 컴1 나3 컴2
+elif (k == 1 and com == 3) or (k == 2 and com == 1) or (k == 3 and com == 2): #승리 조건 
+# k - com == -2 or me -com == 1 , (k - com)%3 == 1
+  print("이김")
+else:
+  print("졌다")
+#나와 컴의 비교를해서 승 패 무승부 출력
