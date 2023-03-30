@@ -1,0 +1,19 @@
+#[0,10,20,30,40 ..... 1000] 인 배열 만들기
+# 0 번지에 0 1번지에 10 2번지에 20 n번지는 n * 10
+a = []
+# for 변수 in 범위(리스트를 ㅓ도 되고 range() 이용)
+for b in range(0,1001,10): # 0부터 1001 까지 10씩 더한다
+  a.append(b)
+  
+print(a)
+
+# pos = a.index(40) 4번지에 있는 40을 찾는다
+pos = a.index(40)
+print(pos)
+
+
+str = "hello world"
+print(str[6])
+print(str.index("w"))
+print(str.find('w'))
+#find 는 찾지모하면 오류대신 -1 출력 -1은 존재하지않는다
