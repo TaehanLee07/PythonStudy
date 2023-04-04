@@ -1,0 +1,10 @@
+a = [0,1,2,3,4,5,6,7,8,9]
+find = int(input())
+size = len(a)
+# range(5) 0 - 4 까지
+# range (1,10, 2) 1 - 9 까지 2 씩 증가
+# 10부터 1 까지 1씩감소 range(11,0,-1) 
+for k in range(size-1,-1,-1):
+  if a[k] == find:
+    print(a[k])
+    break
