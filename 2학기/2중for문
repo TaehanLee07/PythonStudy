@@ -1,0 +1,41 @@
+#for i in range(10):
+#  print(f"Hello",end='\t')  # for i in range(0,10)  for i in range(0,10,1)
+  #1 부터 만 까지 반복출력
+for i in range(2,10):
+  print(f'{i}',end='단\n')
+  for k in range(1,10):
+    print(f' {i} * {k} ', end='\n')
+  print('')
+  
+  #2
+  for i in range(9,1,-1):
+  print(f'{i}',end='단\n')
+  for k in range(1,10):
+    print(f' {i} * {k} ', end='\n')
+  
+  #3
+  a = int(input(""))
+for k in range(1,10):
+  print(f'{a} * {k}', end='\n')
+
+  #4
+  for i in range(2,5): # 2부터 4까지
+  for k in range(1,10):
+    print(f'{i}*{k}={i*k}', end='\n')
+
+  #5
+  # 2*1 3*1 4*1
+# 2*2 3*2 4*2
+for k in range(1,20):
+  for i in range(2,20):
+    print(f'{i} * {k} = {i*k}',end='\t')
+  print('')
+
+  #6
+  #출력: 0  1 2 3
+#      4  5 6 7
+for k in range(0,12,4):
+  for i in range(4):
+    print(f'{i+k}',end='\t')
+  print('')
+  
