@@ -1,0 +1,30 @@
+# 나의 스택파일
+class MyStack:
+    list = []   # 저장하는 곳
+    size = 0
+    # 메서드(기능) ㅏㄴ의 이름과 똑같은 함수(기능 = 메서드가 있고 없으면 생략)
+    # 클래스를 사용할때 매개변수에는 꼭 self 가 들어감
+
+    def __init__(self,size): # 파이썬에서 쓰는 생성자 약속
+        self.size = size
+
+
+    def push(self,value):
+        if len(self.list) > self.size:
+            return False
+        else:
+            self.list.append(value)
+            return True
+
+
+    def pop(self):
+        if len(self.list) < 1:
+            return False
+        else:
+            self.list.pop()
+            return True
+
+    def view(self):
+        return self.list
+
+
